@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="hub.css">
+<title>Character Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="splash-screen">
+    <div id="splash-text">PLEASE INSERT COIN...</div>
+    <div id="splash-warning">Click the screen to continue. WARNING: This website autoplays music. I kept it low, but I figured I'd warn you. Click the audio button on the bottom  of the screen to pause it.</div>
+</div>    
+<div id="container">
+<div id="containershade"></div>
+<div id="titlebox" class="animate-on-entry"></div>
+<div id="titlecard" class ="animate-on-entry"></div>
+<div id="mapbelow" class="animate-on-entry"></div>
+<div id="map" class = "animate-on-entry"></div>
+<div id="Cedrik" class="characterbox animate-on-entry"
+    data-portrait="images/Cedrikselect.png"
+    data-bio="<h1>The Sea Drinker</h1>This is a test. Cedrik's Voiceclaim is Lifeweaver from Overwatch."
+    data-sound="Sounds/Cedriklines.wav"
+    data-namecard="Images/Cedrikname.png"
+    data-jobcard="images/bard.png"
+    data-statcard="images/CedrikChart.png"
+    data-map="images/CedrikMap.png"></div>
+<div id="Hal" class="characterbox animate-on-entry"
+    data-portrait="images/Halselect.png"
+    data-bio="<h1>The Battle Mage</h1>This is a test. Hal's voiceclaim is Shulk from Smash Ultimate."
+    data-sound="Sounds/Hallines.wav"
+    data-namecard="Images/Halname.png"
+    data-jobcard="images/redmage.png"
+    data-statcard="images/HalChart.png"
+    data-map="images/HalMap.png"></div>
+<div id="Khal" class="characterbox animate-on-entry"
+    data-portrait="images/Khalselect.png"
+    data-bio="<h1>The Hedonist</h1>This is a test. Khal's voiceclaim is Scion from League Of Legends."
+    data-sound="Sounds/Khallines.wav"
+    data-namecard="Images/Khalname.png"
+    data-jobcard="images/Warrior.png"
+    data-statcard="images/KhalChart.png"
+    data-map="images/KhalMap.png"></div>
+
+<div id="Leon" class="characterbox animate-on-entry"
+    data-portrait="images/Leonselect.png"
+    data-bio="<h1>The Knight</h1>This is a test. Leon's voiceclaim is Yusuke from Persona 5."
+    data-sound="Sounds/Leonlines.wav"
+    data-namecard="Images/Leonname.png"
+    data-jobcard="images/Paladin.png"
+    data-statcard="images/LeonChart.png"
+    data-map="images/LeonMap.png"></div> 
+    
+<div id="Maerec" class="characterbox animate-on-entry" 
+    data-portrait="images/maerecselect.png"
+    data-bio="<h1>The Mercenary</h1>This is a test. Maerec's voiceclaim is Brynjolf from Skyrim."
+    data-sound="Sounds/Maereclines.wav"
+    data-namecard="images/Maerecname.png"
+    data-jobcard="images/rogue.png"
+    data-statcard="images/MaerecChart.png"
+    data-map="images/MaerecMap.png"
+    ></div>
+<div id="Rhaya" class="characterbox animate-on-entry"
+    data-portrait="images/Rhayaselect.png"
+    data-bio="<h1>The Adventurer</h1>This is a test. Rhaya's voiceclaim is Yosuke from Persona 4."
+    data-sound="Sounds/Rhayalines.wav"
+    data-namecard="Images/Rhayaname.png"
+    data-jobcard="images/pugilist.png"
+    data-statcard="images/RhayaChart.png"
+    data-map="images/Rhayamap.png"></div>
+<div id="Uyo" class="characterbox animate-on-entry"
+    data-portrait="images/Uyoselect.png"
+    data-bio="<h1>The Mad Mage</h1>This is a test. Uyo's Voiceclaim is Teemo from League Of Legends."
+    data-sound="Sounds/Uyolines.wav"
+    data-namecard="Images/Uyoname.png"
+    data-jobcard="images/Blackmage.png"
+    data-statcard="images/UyoChart.png"
+    data-map="images/UyoMap.png"></div>
+<div id="Vadim" class="characterbox animate-on-entry"
+    data-portrait="images/Vadimselect.png"
+    data-bio="<h1>The Scientist</h1>This is a test. Vadim's Voiceclaim is The Monk from Diablo 3."
+    data-sound="Sounds/Vadimlines.wav"
+    data-namecard="Images/Vadimname.png"
+    data-jobcard="images/Scholar.png"
+    data-statcard="images/VadimChart.png"
+    data-map="images/VadimMap.png" animate-on-entry></div>
+<div id="Wez" class="characterbox animate-on-entry"
+    data-portrait="images/Wezselect.png"
+    data-bio="<h1>The Warrior Poet</h1>This is a test. Wez's Voiceclaim is Bristleback from Dota 2."
+    data-sound="Sounds/Wezlines.wav"
+    data-namecard="Images/Wezname.png"
+    data-jobcard="images/Darkknight.png"
+    data-statcard="images/WezChart.png"
+    data-map="images/WezMap.png"></div>
+<div id="characterimage"></div>
+<div id="characterbio"></div>
+<div id="backgroundcard"></div>
+<div id="namecard"></div>
+<div id="jobcard"></div>
+<div id="statbg"></div>
+<div id="statcard"></div>
+<div id="helpicon" class="animate-on-entry"></div>
+<div id="musicicon" class="animate-on-entry"></div>
+ </div>   
+<script>
+  const splash = document.getElementById('splash-screen');
+  const helpButton = document.getElementById('helpicon');
+  const boxes = document.querySelectorAll('.characterbox');
+  const portraitDiv = document.getElementById('characterimage'); 
+  const bioDiv = document.getElementById('characterbio'); 
+  const nameCardDiv = document.getElementById('namecard');
+  const jobCardDiv = document.getElementById('jobcard');
+  const statCardDiv = document.getElementById('statcard');
+  const bgCardDiv = document.getElementById('backgroundcard');
+  const ShadeDiv = document.getElementById('containershade'); 
+  const mapDiv = document.getElementById('map');
+  const musicButton = document.getElementById('musicicon');
+  
+  let currentVoice = null; 
+  const bgMusic = new Audio('Sounds/HipDipper.mp3'); 
+  bgMusic.loop = true; 
+  bgMusic.volume = 0.2; 
+
+  splash.addEventListener('click', () => {
+    const coinSound = new Audio('Sounds/Coin.mp3'); 
+    coinSound.play().catch(error => console.log("Sound blocked:", error));
+
+    setTimeout(() => {
+      bgMusic.play().catch(error => {
+        console.log("Audio playback failed or blocked by browser:", error);
+      });
+     
+      musicButton.style.backgroundImage = "url('Images/audioiconon.png')";
+    }, 500); 
+
+    // Trigger entrance animations when splash finishes
+    const animatedElements = document.querySelectorAll('.animate-on-entry');
+    animatedElements.forEach(element => {
+      element.style.animationPlayState = 'running';
+    });
+    
+    splash.style.display = 'none';
+  }, { once: true }); 
+  
+  boxes.forEach(box => {
+    box.addEventListener('click', () => {
+      if (box.classList.contains('active')) {
+        return; 
+      }
+      
+      if (currentVoice) {
+         currentVoice.pause();       
+         currentVoice.currentTime = 0; 
+      }
+      
+      const currentActive = document.querySelector('.characterbox.active');
+      if (currentActive) {
+        currentActive.classList.remove('active');
+      }
+      box.classList.add('active');
+      
+      const targetImage = box.dataset.portrait; 
+      const targetText = box.dataset.bio; 
+      const targetMap = box.dataset.map;
+      
+      // Update Content Data instantly
+      portraitDiv.style.backgroundImage = `url('${targetImage}')`;
+      portraitDiv.style.backgroundSize = "contain";
+      portraitDiv.style.backgroundRepeat = "no-repeat"; 
+      bioDiv.innerHTML = targetText;
+      
+      nameCardDiv.style.backgroundImage = `url('${box.dataset.namecard}')`;
+      jobCardDiv.style.backgroundImage = `url('${box.dataset.jobcard}')`;
+      statCardDiv.style.backgroundImage = `url('${box.dataset.statcard}')`;
+      
+      if (targetMap) {
+        mapDiv.style.backgroundImage = `url('${targetMap}')`;
+      }
+
+      // Display Elements immediately but make them completely transparent
+      // This stops them from "ghosting" on screen before the animation starts
+      portraitDiv.style.opacity = '0';
+      nameCardDiv.style.opacity = '0';
+      jobCardDiv.style.opacity = '0';
+      bioDiv.style.opacity = '0';
+      statCardDiv.style.opacity = '0';
+
+      portraitDiv.style.display = 'block';
+      bioDiv.style.display = 'block';
+      nameCardDiv.style.display = 'block';
+      jobCardDiv.style.display = 'block';
+      statCardDiv.style.display = 'block';
+      bgCardDiv.style.display = 'block';
+      ShadeDiv.style.display = 'block';
+
+      // ==========================================
+      // STAGGERED CLICK ANIMATION SEQUENCE (FIXED)
+      // ==========================================
+      
+      // 1. Clear previous animation trackers
+      portraitDiv.classList.remove('animate-portrait');
+      nameCardDiv.classList.remove('animate-panel');
+      jobCardDiv.classList.remove('animate-panel');
+      bioDiv.classList.remove('animate-panel');
+      statCardDiv.classList.remove('animate-panel');
+
+      // 2. Force rendering layout reflow
+      void portraitDiv.offsetWidth;
+      void nameCardDiv.offsetWidth;
+      void jobCardDiv.offsetWidth;
+      void bioDiv.offsetWidth;
+      void statCardDiv.offsetWidth;
+
+      // Step A: Fire character portrait right away
+      portraitDiv.classList.add('animate-portrait');
+
+      // Step B: Stagger name and class indicators slightly (100ms)
+      setTimeout(() => {
+        nameCardDiv.classList.add('animate-panel');
+        jobCardDiv.classList.add('animate-panel');
+      }, 100);
+
+      // Step C: Stagger bio information copy blocks next (200ms)
+      setTimeout(() => {
+        bioDiv.classList.add('animate-panel');
+      }, 200);
+
+      // Step D: Stagger visual metric charts last (300ms)
+      setTimeout(() => {
+        statCardDiv.classList.add('animate-panel');
+      }, 300);
+      
+      // ==========================================
+      // DYNAMIC BACKGROUND AUDIO DUCKING LOOP
+      // ==========================================
+      const characterSoundPath = box.dataset.sound;
+      if (characterSoundPath) {
+         currentVoice = new Audio(characterSoundPath); 
+         
+         // If background music is playing, duck its volume to 0.05
+         if (!bgMusic.paused) {
+           bgMusic.volume = 0.1;
+         }
+
+         currentVoice.play().catch(error => {
+             console.log("No Audio", error); 
+             // Restore volume if voice fails to play
+             if (!bgMusic.paused) bgMusic.volume = 0.2;
+         });
+
+         // Restore volume back to 0.3 when character stops talking
+         currentVoice.addEventListener('ended', () => {
+           if (!bgMusic.paused) {
+             bgMusic.volume = 0.2;
+           }
+         });
+      } else {
+         // If this specific character has no voice line, ensure music stays normal
+         if (!bgMusic.paused) {
+           bgMusic.volume = 0.2;
+         }
+      }
+      
+      const clickSound = new Audio('Sounds/picked.wav');
+      clickSound.play().catch(error => {}); 
+    });
+
+    box.addEventListener('mouseenter', () => {
+        if (box.classList.contains('active')) {
+            return; 
+        }
+
+        const hoverSound = new Audio('Sounds/select.wav');
+        hoverSound.currentTime = 0; 
+        hoverSound.play().catch(error => {});
+    });
+  });
+
+  helpButton.addEventListener('click', () => {
+    if (!document.querySelector('.characterbox.active') && bioDiv.style.display === 'block' && nameCardDiv.style.display === 'none') {
+      return;
+    }
+
+    const currentActive = document.querySelector('.characterbox.active');
+    if (currentActive) {
+      currentActive.classList.remove('active');
+    }
+
+    if (currentVoice) {
+       currentVoice.pause();       
+       currentVoice.currentTime = 0; 
+    }
+
+    // Restore music volume to default if it was mid-duck
+    if (!bgMusic.paused) {
+      bgMusic.volume = 0.2;
+    }
+
+    mapDiv.style.backgroundImage = "url('Images/Worldmap.png')";
+
+    nameCardDiv.style.display = 'none';
+    bgCardDiv.style.display = 'none';
+    ShadeDiv.style.display = 'none'; 
+    statCardDiv.style.display = 'none';
+    jobCardDiv.style.display = 'none';
+    portraitDiv.style.display = 'none';
+
+    bioDiv.innerHTML = "Thank you for viewing my page! This is a custom website that I built myself and layered on top of Carrd's system, clearly inspired by various fighting game character selection screens. If you're reading this, it means you've taken time out of your day to appreciate my work, and so I appreciate you! If you have any questions, want to role play, or have any other concerns, please feel free to reach out to me on Discord; my handle is 'Fowlow'. Keep reading for a comprehensive list of various sounds, images, and other tools that I used to help this dream come to life. If you are the owner of any of these aforementioned sources and would prefer I not use them, or if I've forgotten to credit you at all, please do not hesitate to reach out :).<br><br><u>CRT Effect On Splash:</u> From Reddit User XQuader: https://google.com<br><br><u>Coin Sound Effect:</u> From A Stock Sound Website: https://pixabay.com<br><br><u>Background Image:</u> From Art Of Fighting 3. https://fightersgeneration.com<br><br><u>Final Fantasy Inspired Text Box:</u> A website used for generating the code helped me make it myself! https://codepen.io<br><br><u>Shadowbringers Font:</u> I generated images from here: https://fontmeme.com<br><br><u>Background Song:</u> Hip Dipper by Arch Echo: https://youtube.com<br><br>All other sources, including the map, sound, help icons, and menu sound effects come directly from FF14 itself. Pictures of my characters are credited to my lovely wife, Hannah. Sources for voice claim sound effects can be found on the corresponding character's page. ";
+    
+    bioDiv.style.opacity = '0';
+    bioDiv.style.display = 'block';
+
+    // Apply the entry animation layout style to the help text window too
+    bioDiv.classList.remove('animate-panel');
+    void bioDiv.offsetWidth;
+    bioDiv.classList.add('animate-panel');
+
+    const helpSound = new Audio('Sounds/select.wav');
+    helpSound.play().catch(error => {});
+  });
+
+  musicButton.addEventListener('click', () => {
+    if (bgMusic.paused) {
+      // Ensure it starts back up at standard volume settings if toggled on manually
+      bgMusic.volume = (currentVoice && !currentVoice.paused) ? 0.05 : 0.2;
+      bgMusic.play().catch(error => {
+        console.log("Audio playback failed or blocked by browser:", error);
+      });
+      musicButton.style.backgroundImage = "url('Images/audioiconon.png')";
+    } else {
+      bgMusic.pause();
+      musicButton.style.backgroundImage = "url('Images/audioiconoff.png')";
+    }
+  });
+</script>
+</body>
+</html>
